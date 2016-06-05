@@ -12,6 +12,15 @@ struct Uuid {
 			uint32_t low;
 		};
 	};
+
+
+	bool operator< (const Uuid & rhs) const {
+		if (high < rhs.high)
+			return true;
+		if (low < rhs.low)
+			return true;
+		return false;
+	}
 };
 
 } // namespace CSaruUuid
