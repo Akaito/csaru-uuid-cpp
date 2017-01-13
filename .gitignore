@@ -3,7 +3,9 @@
 __pycache__
 *.vim
 
-build
+*.d
+*.o
+*.a
 
 Debug
 Release
